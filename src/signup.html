@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro | Main Store</title>
+    <style>
+        body { font-family: Arial; background: #f0f4f8; display: flex; justify-content: center; padding-top: 50px; }
+        .container { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); width: 350px; }
+        h2 { text-align: center; color: #2d3748; }
+        input { width: 100%; padding: 10px; margin: 8px 0; border: 1px solid #ddd; border-radius: 5px; box-sizing: border-box; }
+        button { width: 100%; padding: 12px; background: #2b6cb0; color: white; border: none; border-radius: 5px; font-size: 16px; cursor: pointer; margin-top: 10px; }
+        button:hover { background: #2c5282; }
+        .link { text-align: center; margin-top: 15px; font-size: 14px; }
+        .link a { color: #2b6cb0; text-decoration: none; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Crear Cuenta</h2>
+        <form action="signup.php" method="post">
+            <label>Nombres:</label>
+            <input type="text" name="firstname" required>
+            
+            <label>Apellidos:</label>
+            <input type="text" name="lastname" required>
+            
+            <label>Número de Identificación:</label>
+            <input type="text" name="ident_number" required>
+            
+            <label>Teléfono Móvil:</label>
+            <input type="text" name="mobile_phone">
+            
+            <label>Correo Electrónico:</label>
+            <input type="email" name="email" required>
+            
+            <label>Contraseña:</label>
+            <input type="password" name="pswd" required>
+            
+            <button type="submit">Registrarse</button>
+        </form>
+        <div class="link">
+            ¿Ya tienes cuenta? <a href="signin.html">Iniciar Sesión</a>
+        </div>
+    </div>
+</body>
+</html>
